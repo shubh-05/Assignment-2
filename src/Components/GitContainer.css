@@ -1,0 +1,119 @@
+.gitContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  background-color: #f9f6f9;
+  background-image: linear-gradient(0deg, #f9f6f9 0%, #97d9e1 100%);
+  border-radius: 30px;
+}
+
+.gitContainer > .imgDiv {
+  height: 130px;
+  width: 130px;
+  margin-left: 35px;
+}
+.imgDiv > pre{
+  font-style: italic;
+}
+
+.gitContainer > .imgDiv > img {
+  height: 120px;
+  width: 120px;
+  margin-top: 5px;
+
+  border-radius: 50%;
+}
+.gitContainer > .whiteDiv {
+  height: 250px;
+  width: 430px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.labelDiv span{
+  color: rgb(93, 91, 91);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.labelDiv pre{
+  font-size: 18px;
+  color: rgb(48, 225, 63);
+  font-style: italic;
+  font-weight: bold;
+}
+.labelDiv > #repos, #gists, #profile-creation{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 450px) {
+  .gitContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 480px;
+    width: 325px;
+    margin: 0rem auto;
+  }
+  .gitContainer > .imgDiv {
+    margin: auto 0px;
+  }
+  .gitContainer > .imgDiv > pre{
+    font-size: 12px;
+  }
+  .gitContainer > .whiteDiv > .labelDiv > span{
+    font-size: 18px;
+  }
+  
+  .gitContainer > .whiteDiv{
+    margin-top: 38px;
+    width: 300px;
+    height: 320px;
+  }
+  .gitContainer > .whiteDiv > .labelDiv{
+    margin-top: 0px;
+  }
+  .gitContainer > .whiteDiv > .labelDiv > #repos, #gists, #profile-creation{
+    font-size: 19px;
+    font-weight: normal;
+  }
+}
+
+/* Second Media Query */
+@media screen and (max-width: 420px){
+  .gitContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 420px;
+    width: 250px;
+    margin: 0rem auto;
+  }
+  .gitContainer > .imgDiv {
+    margin: auto 0px;
+  }
+  .gitContainer > .imgDiv > img{
+    height: 55px;
+    width: 55px;
+  }
+  .gitContainer > .imgDiv > pre{
+    font-size: 8px;
+  }
+  .gitContainer > .whiteDiv > .labelDiv > span{
+    font-size: 15px;
+  }
+  .gitContainer > .whiteDiv{
+    margin-top: 8px;
+    width: 250px;
+    height: 320px;
+  }
+}

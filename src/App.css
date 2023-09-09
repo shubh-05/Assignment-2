@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@700&family=Nunito+Sans:opsz@6..12&family=Outfit:wght@100;300;400;500;700&family=Poppins:wght@400;700&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.App > .heading{
+  margin-top: 3rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 450px){
+    .App > .heading{
+      font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 420px){
+  .App > .heading{
+    font-size: 20px;
+  }
+}
+
